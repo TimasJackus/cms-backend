@@ -1,0 +1,14 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "database": "vaikusypsenos",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "synchronize": false,
+  "migrationsTableName": "migrations",
+  "migrations": ["./dist/data/migrations/*.js"],
+  "useUnifiedTopology": true,
+  "cli": {
+    "migrationsDir": "./src/data/migrations"
+  }
+}
